@@ -8,7 +8,6 @@ The repository is organized into different directories based on the programming 
 - [powershell](./powershell)
 - [linqpad](./linqpad)
   - scripts written with [LINQPad](https://www.linqpad.net) 5/7
-- azure-devops
 
 ## Usage
 Feel free to browse the contents of this repository and use any code snippets or sample projects for your personal use. However, please note that the code is provided as-is, without any warranty or support.
