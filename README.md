@@ -5,7 +5,7 @@ This repository contains code snippets and sample projects created by [Your Name
 ## Contents
 The repository is organized into different directories based on the programming language, tool or technology being used. Currently, the following directories are available:
 
-- powershell - Description of contents.
+- powershell
 - linqpad - LINQPad 5/7 scripts [LINQPad](https://www.linqpad.net).
 
 ## Usage
