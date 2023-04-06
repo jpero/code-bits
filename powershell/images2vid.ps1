@@ -5,7 +5,8 @@ param (
 )
 
 # Define ffmpeg arguments for video creation from images
-$ffmpegArgs = "-f", "image2", "-framerate", "2", "-i", "%05d.png", "-c:v", "libx264", "output.mkv"
+# $ffmpegArgs = "-f", "image2", "-framerate", "2", "-i", "%05d.png", "-c:v", "libx264", "output.mkv"
+$ffmpegArgs = "-f", "image2", "-framerate", "2", "-i", "%05d.png", "-vf", "scale=w=1280:h=720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "18", "output.mp4"
 
 # Function to check the folder for image files and set the appropriate input format for ffmpeg
 function ImageCheck {
